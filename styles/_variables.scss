@@ -1,0 +1,46 @@
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$green: #20c997;
+$pink: #d63384;
+$light-blue: #0dcaf0;
+$yellow: #ffc107;
+$red: #dc3545;
+$nicewhite: #F8F8FF;
+$grey: #606163;
+$orange: #ff4321;
+$white: #edf2fc;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin btn{
+    background: $orange;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 18px;
+    font-weight: 700;
+    color: white;
+    border: 1px solid $orange;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    &:hover{
+        background: transparent;
+        color: $orange;
+        transition: all .4s ease-in-out;
+    }
+}
+@mixin anchor {
+    text-decoration: none;
+    color: $textColor;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    &:hover{
+        color: $orange;
+    }
+    &.active{
+        color: $orange;
+    }
+}

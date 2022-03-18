@@ -1,0 +1,146 @@
+.mainContainer{
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    background: $nicewhite;
+    overflow: hidden !important;
+    @include flexCenter();
+    .left{
+        width: 50%;
+        min-height: calc(100vh - 70px);
+        overflow: hidden;
+        @include flexCenter();
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 50px ;
+        h1{
+            margin-bottom: 20px;
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: darken($grey, 20%);
+            span{
+                font-size: 2.6rem;
+                font-weight: 800;
+                color: $orange;
+                margin-bottom: 20px;
+
+            }
+        }
+        span{
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 30px;
+            font-size: 1.2rem;
+            color: darken($grey, 20%);
+        }
+        .icon{
+            margin-right: 20px;
+            font-size: 25px;
+            cursor: pointer;
+            color: darken($grey, 20%);
+        }
+        .socialsContainer{
+            margin-bottom: 30px;
+            @include flexCenter();
+        }
+        .btn1{
+            @include btn();
+            margin-bottom: 30px ;
+        }
+        .btn2{
+            @include btn();
+            display: none;
+            margin-bottom: 30px !important;
+        }
+    }
+    .right{
+        width: 50%;
+        height: calc(100vh - 70px);
+        @include flexCenter();
+        align-items: flex-end;
+        .BgContainer{
+            background: url("/pictures/back.png") no-repeat center / contain;;
+            width: 90%;
+            height: 90%;
+            @include flexCenter();
+            .ImageContainer{
+                width: 100%;
+                height: 100%;
+                background: url("/pictures/11.png") no-repeat center / contain;;
+            }
+                     
+        }
+    }
+}
+
+.icon1:hover{
+    color: $blue !important;
+}
+.icon2:hover{
+    color: $indigo !important;
+}
+.icon3:hover{
+    color: $blue !important;
+}
+.icon4:hover{
+    color: $green !important;
+}
+.icon5:hover{
+    color: $blue !important;
+}
+
+@media (max-width: 1000px){
+    .left{
+        padding: 0 20px !important;
+    }
+}
+@media (max-width: 800px){
+    .mainContainer{
+        flex-direction: column;
+    }
+    .left{
+        padding: 10px 20px !important;
+        width: 100% !important;
+        height: 50% !important;
+        h1{
+            margin-bottom: 5px !important;
+            font-size: 2.5rem !important;
+            span{
+                font-size: 2.5rem !important;
+            }
+        }
+        span{
+            margin-bottom: 10px !important;
+        }
+        button{
+            width: 100% !important;
+        }
+        .socialsContainer{
+            width: 100%;
+        }
+        .btn1{
+            margin-bottom: 20px !important;
+        }
+        .btn2{
+            display: block !important;
+        }
+        .icon{
+            font-size: 35px !important;
+        }
+    }
+    .right{
+        width: 100% !important;
+        height: 80vh !important;
+        .imageContainer{
+            width: 80% !important;
+            height: 100% !important;
+        }
+
+    }
+    .btn1{
+        font-size: 1rem !important;
+    }
+    .btn2{
+        font-size: 1rem;
+    }
+    
+}

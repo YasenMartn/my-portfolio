@@ -1,0 +1,153 @@
+.navbar{
+    width: 100%;
+    height: 70px;
+    background: $nicewhite;
+    position: sticky !important;
+    top: 0;
+    @include flexCenter();
+    padding: 0 50px;
+    justify-content: space-between;
+    button{
+        @include btn();
+    }
+    .logoContainer{
+        width: 120px;
+        height: 90%;
+        @include flexCenter();
+        position: relative; 
+    }
+    ul{
+        list-style: none;
+        @include flexCenter();
+        li{
+            margin-right: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color: $grey;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    &:hover{
+        color: $orange;
+    }
+    &.active{
+        color: $orange;
+    }
+}
+
+.mobileMenuButton{
+    width: 40px;
+    height: 40px;
+    display: none;
+    cursor: pointer;
+    .line{
+        width: 100%;
+        height: 5px;
+        background: black;
+        position: relative;
+        transition: all .4s ease-in-out;
+        &.active{
+            background: transparent;
+            transition: all .4s ease-in-out;
+        }
+        &::after, &::before{
+            content: "";
+            width: 100%;
+            height: 5px;
+            background: black;
+            position: absolute;
+            transition: all .4s ease-in-out;
+        }
+        &::after{
+            top: 15px;
+        }
+        &::before{
+            bottom: 15px;
+        }
+        &.active::after{
+            transition: all .4s ease-in-out;
+            top: 0;
+            transform: rotate(-45deg);
+        }
+        &.active::before{
+            transition: all .4s ease-in-out;
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.mobileMenuContainer{
+    width: 90%;
+    height: calc(100vh - 70px);
+    position: fixed !important;
+    top: 70px;
+    right: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.mobileMenu{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute !important;
+    background: $orange;
+    @include flexCenter();
+    z-index: 2222 !important;
+    top: 0;
+    right: 0;
+    flex-direction: column;    
+    transition: all .4s ease-in-out;
+    transform: translate(101%);
+    &.active{
+        transition: all .4s ease-in-out;
+        transform: translate(0%);
+    }
+    li{
+        padding-bottom: 20px;
+        font-weight: bold;
+        list-style: none;
+        a{
+            font-size: 2rem;
+            color: white;
+            &:hover{
+                color: black;
+            }
+            &.active{
+                color: black;
+            }
+        }
+    }  
+}
+
+
+
+@media (max-width: 1000px){
+    .navbar{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 800px){
+    .navbar{
+        padding: 0 20px;
+        ul{
+            display: none;
+        }
+        button{
+            display: none;
+        }
+    } 
+    .mobileMenuButton{
+        @include flexCenter();
+    }
+    
+    .mobileMenu{
+        @include flexCenter();
+
+    }
+}
