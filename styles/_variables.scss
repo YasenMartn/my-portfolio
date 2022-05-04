@@ -16,6 +16,18 @@ $white: #edf2fc;
     align-items: center;
     justify-content: center;
 }
+@mixin flexStart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+@mixin flexColumn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
 @mixin btn{
     background: $orange;
     border: none;

@@ -1,0 +1,16 @@
+.aboutContainer{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: $nicewhite;
+    @include flexCenter();
+    justify-content: flex-start;
+    padding-top: 200px;
+    flex-direction: column;
+    .info{
+        width: 370px;
+        margin-top: 20px;
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}

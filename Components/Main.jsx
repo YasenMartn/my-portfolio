@@ -7,9 +7,9 @@ const Main = () => {
     <div className='mainContainer'>
 
       <div className="left">
-        <h1>Hey, I'm <span>Yassin Laghzaouna</span></h1>
-        <h1>I'm a Front-end Web Developer</h1>
-        <span>Welcome to my official portfolio website where i put all my work related to my designs and many more.</span>
+        <h1 className='header'>Hey, I&apos;m <span className='orangeHeader' >Yassin Laghzaouna</span></h1>
+        <h1 className='header'>I&apos;m a Front-end Web Developer</h1>
+        <span className='text'>Welcome to my official portfolio website where i put all my projects, technologies i&apos;m using and more.</span>
         <button className='btn1'>Download CV</button>
         <button className='btn2'>Hire Me</button>
         <div className="socialsContainer">

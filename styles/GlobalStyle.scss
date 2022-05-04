@@ -2,30 +2,33 @@
 @import "./variables";
 @import "./navbar";
 @import "./main";
+@import "./projects";
+@import "./skills";
+@import "./about";
+@import "./contact";
 
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Poppins;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
 }
 
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
+}
   /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

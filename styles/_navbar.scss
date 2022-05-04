@@ -7,6 +7,7 @@
     @include flexCenter();
     padding: 0 50px;
     justify-content: space-between;
+    z-index: 2222 !important;
     button{
         @include btn();
     }
@@ -14,6 +15,7 @@
         width: 120px;
         height: 90%;
         @include flexCenter();
+        justify-content: flex-start;        
         position: relative; 
     }
     ul{
