@@ -1,67 +1,67 @@
 export const skills = [
     {
         id: 1,
-        image: "/pictures/html.jpg",
+        image: "html.jpg",
         name: "HTML"
     },
     {
         id: 2,
-        image: "/pictures/css.jpg",
+        image: "css.jpg",
         name: "CSS"
     },
     {
         id: 3,
-        image: "/pictures/js.jpg",
+        image: "js.jpg",
         name: "Javascript"
     },
     {
         id: 4,
-        image: "/pictures/jquery.jpg",
+        image: "jquery.jpg",
         name: "JQuery"
     },
     {
         id: 5,
-        image: "/pictures/sass.jpg",
+        image: "sass.jpg",
         name: "Sass"
     },
     {
         id: 6,
-        image: "/pictures/git.jpg",
+        image: "git.jpg",
         name: "Git"
     },
     {
         id: 7,
-        image: "/pictures/g2.png",
+        image: "g2.png",
         name: "Github"
     },
     {
         id: 8,
-        image: "/pictures/react.jpg",
+        image: "react.jpg",
         name: "React"
     },
     {
         id: 9,
-        image: "/pictures/redux.jpg",
-        name: "Redux"
+        image: "redux.jpg",
+        name: "Redux toolkit"
     },
     {
         id: 10,
-        image: "/pictures/router.png",
+        image: "router.png",
         name: "React Router"
     },
     {
         id: 11,
-        image: "/pictures/styled.png",
+        image: "styled.png",
         name: "Styled-Components"
     },
     {
         id: 12,
-        image: "/pictures/swiper.jpg",
+        image: "swiper.jpg",
         name: "Swiper"
     },
     {
         id: 13,
-        image: "/pictures/next.jpg",
+        image: "next.jpg",
         name: "Next JS"
     },
 ]
@@ -70,20 +70,30 @@ export const myProjects = [
     {
         id: 1,
         name: "Treasure",
-        image: "/pictures/1.png",
-        info: "React, Redux, Sass, MUI icons & React Router."
+        image: "1.png",
+        info: "React, Redux, Sass, MUI icons & React Router.",
+        link: ""
     },
     {
         id: 2,
         name: "PS5 Website",
-        image: "/pictures/2.png",
-        info: "React, Redux, Sass, MUI icons & React Router."
+        image: "2.png",
+        info: "React, Redux, Sass, MUI icons & React Router.",
+        link: "https://ps5dualsense.netlify.app/"
     },
     {
         id: 3,
         name: "Fyler",
-        image: "/pictures/3.png",
-        info: "Next JS, Styled-components, MUI icons."
+        image: "3.png",
+        info: "Next JS, Styled-components, MUI icons.",
+        link: "https://fyler.netlify.app/"
+    },
+    {
+        id: 4,
+        name: "Indigo Agency",
+        image: "4.png",
+        info: "Next JS, Styled-components, MUI icons.",
+        link: "https://indigoagency.netlify.app/"
     },
     
     

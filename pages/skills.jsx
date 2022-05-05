@@ -18,7 +18,7 @@ const services = () => {
           {skills.map(skill =>(
             <div className="skillContainer" key={skill.id}>
               <div className="tooltiptext">{skill.name}</div>
-              <Image src={skill.image} alt={skill.name} width="60%" height="60%"/>
+              <Image src={`/pictures/technologies/${skill.image}`} alt={skill.name} width="60%" height="60%"/>
             </div>
           ))}
         </div>

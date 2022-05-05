@@ -16,9 +16,9 @@ const projects = () => {
         <div className="myProjectsContainer">
           {myProjects.map(project => (
             <div key={project.id} className="projectContainer">
-              <div className="imgContainer">
-                <Image src={project.image} layout="fill" objectFit='contain' alt="picture" />
-              </div>
+              <a className="imgContainer" href={project.link} target="_blank" >
+                <Image src={`/pictures/websites/${project.image}`} layout="fill" objectFit='contain' alt="picture" />
+              </a>
               <div className="infoContainer">
                 <h2 className="title">{project.name}</h2>
                 <span className="info">Built by: {project.info}</span>

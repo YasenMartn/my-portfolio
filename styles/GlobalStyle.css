@@ -23,13 +23,13 @@
 }
 
 .navbar button {
-  background: #ff4321;
+  background: #0d6efd;
   border: none;
   border-radius: 5px;
   padding: 12px 18px;
   font-weight: 700;
   color: white;
-  border: 1px solid #ff4321;
+  border: 1px solid #0d6efd;
   cursor: pointer;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -37,7 +37,7 @@
 
 .navbar button:hover {
   background: transparent;
-  color: #ff4321;
+  color: #0d6efd;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
@@ -87,11 +87,11 @@ a {
 }
 
 a:hover {
-  color: #ff4321;
+  color: #0d6efd;
 }
 
 a.active {
-  color: #ff4321;
+  color: #0d6efd;
 }
 
 .mobileMenuButton {
@@ -165,7 +165,7 @@ a.active {
   height: 100%;
   visibility: visible;
   position: absolute !important;
-  background: #ff4321;
+  background: #0d6efd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +303,7 @@ a.active {
 .mainContainer .left .header .orangeHeader {
   font-size: 3rem;
   font-weight: 700;
-  color: #ff4321;
+  color: #0d6efd;
   margin-bottom: 20px;
 }
 
@@ -336,13 +336,13 @@ a.active {
 }
 
 .mainContainer .left .btn1 {
-  background: #ff4321;
+  background: #0d6efd;
   border: none;
   border-radius: 5px;
   padding: 12px 18px;
   font-weight: 700;
   color: white;
-  border: 1px solid #ff4321;
+  border: 1px solid #0d6efd;
   cursor: pointer;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -351,19 +351,19 @@ a.active {
 
 .mainContainer .left .btn1:hover {
   background: transparent;
-  color: #ff4321;
+  color: #0d6efd;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 
 .mainContainer .left .btn2 {
-  background: #ff4321;
+  background: #0d6efd;
   border: none;
   border-radius: 5px;
   padding: 12px 18px;
   font-weight: 700;
   color: white;
-  border: 1px solid #ff4321;
+  border: 1px solid #0d6efd;
   cursor: pointer;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -373,7 +373,7 @@ a.active {
 
 .mainContainer .left .btn2:hover {
   background: transparent;
-  color: #ff4321;
+  color: #0d6efd;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
@@ -393,9 +393,7 @@ a.active {
 }
 
 .mainContainer .right .BgContainer {
-  background: url("/pictures/k.png") no-repeat center/contain;
-  -webkit-animation: rotate 3s infinite linear;
-          animation: rotate 3s infinite linear;
+  background: url("/pictures/yk.png") no-repeat center/contain;
   width: 90%;
   height: 80%;
   display: -webkit-box;
@@ -412,20 +410,6 @@ a.active {
 .mainContainer .right .BgContainer .ImageContainer {
   width: 100%;
   height: 100%;
-}
-
-@-webkit-keyframes rotate {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 .icon1:hover {
@@ -580,6 +564,7 @@ a.active {
   width: 100%;
   height: 160px;
   border-radius: 15px;
+  border: 1px solid #0d6efd;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -661,7 +646,7 @@ a.active {
   margin: 20px;
   border-radius: 50%;
   background: white;
-  border: 3px solid #6f42c1;
+  border: 3px solid #0d6efd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,13 +746,13 @@ a.active {
 }
 
 .btn {
-  background: #ff4321;
+  background: #0d6efd;
   border: none;
   border-radius: 5px;
   padding: 12px 18px;
   font-weight: 700;
   color: white;
-  border: 1px solid #ff4321;
+  border: 1px solid #0d6efd;
   cursor: pointer;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -777,7 +762,7 @@ a.active {
 
 .btn:hover {
   background: transparent;
-  color: #ff4321;
+  color: #0d6efd;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }

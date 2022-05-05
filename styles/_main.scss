@@ -56,8 +56,7 @@
         height: calc(100vh - 70px);
         @include flexCenter();
         .BgContainer{
-            background:  url("/pictures/k.png") no-repeat center / contain;
-            animation: rotate 3s infinite linear;
+            background:  url("/pictures/yk.png") no-repeat center / contain;
             width: 90%;
             height: 80%;
             @include flexCenter();
@@ -70,11 +69,6 @@
     }
 }
 
-@keyframes rotate {
-    to{
-        transform: rotate(360deg);
-    }
-}
 
 .icon1:hover{
     color: $blue !important;
