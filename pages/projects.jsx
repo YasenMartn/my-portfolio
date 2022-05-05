@@ -16,7 +16,7 @@ const projects = () => {
         <div className="myProjectsContainer">
           {myProjects.map(project => (
             <div key={project.id} className="projectContainer">
-              <a className="imgContainer" href={project.link} target="_blank" >
+              <a className="imgContainer" href={project.link} target="_blank"  rel="noreferrer" >
                 <Image src={`/pictures/websites/${project.image}`} layout="fill" objectFit='contain' alt="picture" />
               </a>
               <div className="infoContainer">
