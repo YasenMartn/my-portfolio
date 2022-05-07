@@ -72,7 +72,7 @@ export const myProjects = [
         name: "Treasure",
         image: "1.png",
         info: "React, Redux, Sass, MUI icons & React Router.",
-        link: ""
+        link: "https://treasurestore.netlify.app/"
     },
     {
         id: 2,
