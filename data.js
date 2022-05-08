@@ -71,7 +71,7 @@ export const myProjects = [
         id: 1,
         name: "Treasure",
         image: "1.png",
-        info: "React, Redux, Sass, MUI icons & React Router.",
+        info: "React, Redux, Sass, MUI icons, Swiper & React Router.",
         link: "https://treasurestore.netlify.app/"
     },
     {
@@ -92,7 +92,7 @@ export const myProjects = [
         id: 4,
         name: "Indigo Agency",
         image: "4.png",
-        info: "Next JS, Styled-components, MUI icons.",
+        info: "React, Styled-components, MUI icons, AOS & React-scroll",
         link: "https://indigoagency.netlify.app/"
     },
     
