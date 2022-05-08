@@ -64,6 +64,11 @@ export const skills = [
         image: "next.jpg",
         name: "Next JS"
     },
+    {
+        id: 14,
+        image: "api.svg",
+        name: "API Integration (Axios)"
+    }
 ]
 
 export const myProjects = [

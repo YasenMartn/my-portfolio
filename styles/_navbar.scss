@@ -40,6 +40,10 @@ a{
         color: $orange;
     }
 }
+.btn a{
+    color: inherit;
+    font-size: inherit;
+}
 
 .mobileMenuButton{
     width: 40px;

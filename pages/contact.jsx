@@ -23,7 +23,7 @@ const Contact = () => {
       placeHolder: "full name",
       errorMessage: "Fullname should be 3-16 characters and shouldn't incude any special characters",
       label: "Full name",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+      pattern: "^(?=.{3,16}$)[a-zA-Z]+(?: [a-zA-Z]+)?$",
       required: true,
     },
     {
@@ -54,22 +54,24 @@ const Contact = () => {
     },
   ]
 
-  const formRef = useRef();
-  //handling submitting a form.
-  const handleSubmit = () => {
-    e.preventDefault();
-    emailjs.sendForm('service_yo5as5p', 'template_wcdey5i', formRef.current, 'YmIJnqzWMW_yPL-pa')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
-  }
-
   //handling change of state
   const onChange = (e) => {
     setValues({...values, [e.target.name]: e.target.value })
   }
+
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_yo5as5p', 'template_wcdey5i', form.current, 'YmIJnqzWMW_yPL-pa')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
     <div>
@@ -80,7 +82,7 @@ const Contact = () => {
       </Head>
       <div className="contactContainer">
         <h1>Contact Us</h1>
-          <form onSubmit={handleSubmit} ref={formRef} >
+          <form ref={form} onSubmit={sendEmail} >
             {inputs.map(input =>(
               <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange} />
             ))}

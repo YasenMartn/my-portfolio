@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from "next/router";
@@ -8,7 +8,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   const toggleMenu = () => {
-      setMenu(!menu)
+    setMenu(!menu)
   }
 
   const closeMenu = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
   }
 
   const router = useRouter();
-  
+
   return (
     <div className='navbar'>
 
@@ -29,10 +29,14 @@ const Navbar = () => {
         <li><Link href="/projects"><a className={router.pathname == "/projects" ? "active" : ""}>Projects</a></Link></li>
         <li><Link href="/skills"><a className={router.pathname == "/skills" ? "active" : ""}>Skills</a></Link></li>
         <li><Link href="/about"><a className={router.pathname == "/about" ? "active" : ""}>About</a></Link></li>
-        <li style={{marginRight: "0"}}><Link href="/contact"><a className={router.pathname == "/contact" ? "active" : ""}>Contact</a></Link></li>
+        <li style={{ marginRight: "0" }}><Link href="/contact"><a className={router.pathname == "/contact" ? "active" : ""}>Contact</a></Link></li>
       </ul>
 
-      <button>Hire Me</button>
+      <Link href="/contact" >
+        <button className="btn">
+          Hire Me
+        </button>
+      </Link>
 
       <div className="mobileMenuButton" onClick={toggleMenu}>
         <div className={"line " + (menu ? "active" : "")}></div>
@@ -48,7 +52,7 @@ const Navbar = () => {
           <li><Link href="/contact"><a onClick={closeMenu} className={router.pathname == "/contact" ? "active" : ""}>Contact</a></Link></li>
         </div>
       </div>
-      
+
     </div>
   )
 }

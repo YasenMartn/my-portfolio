@@ -19,7 +19,7 @@
         min-height: auto;
         margin: 20px;
         @include flexColumn();
-        transition: .5s ease-in-out all;
+        transition: .4s ease-in-out all;
         &:hover{
             transform: scale(1.1);
         }
