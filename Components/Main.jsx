@@ -10,7 +10,9 @@ const Main = () => {
         <h1 className='header'>Hey, I&apos;m <span className='orangeHeader' >Yassin Laghzaouna</span></h1>
         <h1 className='header'>I&apos;m a Front-end Web Developer</h1>
         <span className='text'>Welcome to my official portfolio website where i put all my projects, technologies i&apos;m using and more.</span>
-        <button className='btn1'>Download CV</button>
+        <Link href="/cv">
+          <button className='btn1'>Download CV</button>
+        </Link>
         <Link href="/contact" >
           <button className="btn2">
             Hire Me
