@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 
-const cv = () => {
+const Cv = () => {
 
     const [src, setSrc] = useState("/pictures/z.png")
 
@@ -39,4 +39,4 @@ const cv = () => {
     )
 }
 
-export default cv
+export default Cv
