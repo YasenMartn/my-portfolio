@@ -23,7 +23,7 @@ const Cv = () => {
                         <option value="/pictures/r.png">French</option>
                     </select>
                     <div className="imgContainer">
-                        <Image src={src} layout='fill' objectFit='contain' className='x' />
+                        <Image src={src} alt="cv picture" layout='fill' objectFit='contain' className='x' />
                     </div>
                     <a className='mobileBtn' href={src} download>Download</a>
                 </div>
