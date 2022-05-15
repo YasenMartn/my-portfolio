@@ -4,6 +4,8 @@
     padding: 50px 50px !important;
     overflow: hidden;
     @include flexCenter();
+    background-color: $nicewhite;
+
     justify-content: flex-start;
     flex-direction: column;
     .skills{

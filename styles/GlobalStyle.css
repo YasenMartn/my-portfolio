@@ -59,6 +59,7 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: relative;
+  cursor: pointer;
 }
 
 .navbar ul {
@@ -519,6 +520,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #F8F8FF;
 }
 
 .projectsContainer .title {
@@ -626,6 +628,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #F8F8FF;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -753,6 +756,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #F8F8FF;
 }
 
 .btn {

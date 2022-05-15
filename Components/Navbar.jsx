@@ -20,9 +20,11 @@ const Navbar = () => {
   return (
     <div className='navbar'>
 
-      <div className="logoContainer">
-        <Image src="/pictures/k.png" alt="logo" width="50px" height="50px" objectFit='contain' />
-      </div>
+      <Link href="/" >
+        <a href="" className="logoContainer">
+          <Image src="/pictures/k.png" alt="logo" width="50px" height="50px" objectFit='contain' />
+        </a>
+      </Link>
 
       <ul>
         <li><Link href="/"><a className={router.pathname == "/" ? "active" : ""}>Home</a></Link></li>
