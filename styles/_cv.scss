@@ -1,87 +1,40 @@
 .cvContainer {
     width: 100%;
-    height: calc(100vh - 70px);
-    @include flexCenter();
-    .left {
-        width: 70%;
-        height: calc(100vh - 70px);
-        @include flexColumn();
-        justify-content: center;
-        .imgContainer {
-            width: 70%;
-            height: 90%;
-            @include flexCenter();
-            position: relative;
-        }
-     
-        .mobileBtn{
-            display: none;
-        }
-        .language{
-            display: none;
-        }
-    }
-}
-.right {
-    width: 30%;
     min-height: calc(100vh - 70px);
+    padding: 20px;
     @include flexColumn();
-    justify-content: center;    
-    padding: 50px 20px;
-    justify-content: space-between;
-    .btnr {
-        @include btn();
-        margin-top: 20px;
-        text-decoration: none;
-        width: 100%;
-        font-weight: normal;
-        text-align: center
-
+    background-color: $nicewhite;
+    .btnsContainer {
+        @include flexCenter();
+        margin-bottom: 20px;
+        .downloadBtn {
+            @include btn();
+            text-decoration: none;
+            text-align: center;
+            font-weight: normal;
+            font-size: 1.2rem;
+        }
+        .language {
+            @include btn();
+            outline: none;
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin-right: 20px;
+        }
     }
-    .language{
-        @include btn();
-        outline: none;
-        font-size: 1.2rem;
-        font-weight: normal;
+    .imgContainer {
         width: 100%;
-
+        height: 150vh;
+        @include flexCenter();
+        position: relative;
     }
 }
 
 @media (max-width: 800px) {
-    .cvContainer {
-        flex-direction: column;
-        .left {
-            width: 100%;
-            .imgContainer {
-                width: 90%;
-                height: 70%;
-            }
-            .mobileBtn{
-                @include btn();
-                display: block;
-                margin-top: 20px;
-                width: 90%;
-                text-decoration: none;
-                text-align: center;
-                font-weight: normal;
-            }
-            .language{
-                display: block;
-                @include btn();
-                width: 90%;
-                margin-bottom: 20px;
-                outline: none;
-                font-size: 1.2rem;
-                font-weight: normal;
-            }
-        }
-        .right {
-            display: none;
+    .cvContainer{
+        height: calc(100vh - 70px);
+        .imgContainer{
+            height: 90%;
         }
     }
-}
-
-option{
-    padding: 20px;
 }

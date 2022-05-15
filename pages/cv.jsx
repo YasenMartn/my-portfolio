@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Cv = () => {
 
-    const [src, setSrc] = useState("/pictures/z.png")
+    const [src, setSrc] = useState("/pictures/english.jpg")
 
     const handleChange = (e) => {
         setSrc(e.target.value)
@@ -13,26 +13,19 @@ const Cv = () => {
         <div>
             <Head>
                 <title>CV</title>
-                <meta name="description" content="My works" />
+                <meta name="description" content="My cv" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className='cvContainer'>
-                <div className="left">
+                <div className="btnsContainer">
                     <select name="language" className="language" onChange={handleChange}>
-                        <option value="/pictures/z.png">English</option>
-                        <option value="/pictures/r.png">French</option>
+                        <option value="/pictures/english.jpg">English</option>
+                        <option value="/pictures/french.jpg">French</option>
                     </select>
-                    <div className="imgContainer">
-                        <Image src={src} alt="cv picture" layout='fill' objectFit='contain' className='x' />
-                    </div>
-                    <a className='mobileBtn' href={src} download>Download</a>
+                    <a className='downloadBtn' href={src} download>Download</a>
                 </div>
-                <div className="right">
-                    <select name="language" className="language" onChange={handleChange}>
-                        <option value="/pictures/z.png">English</option>
-                        <option value="/pictures/r.png">French</option>
-                    </select>
-                    <a className='btnr' href={src} download>Download</a>
+                <div className="imgContainer">
+                    <Image src={src} alt="cv picture" layout='fill' objectFit='contain' className='x' />
                 </div>
             </div>
         </div>
