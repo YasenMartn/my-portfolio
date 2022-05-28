@@ -10,6 +10,9 @@ const projects = () => {
         <title>Projects</title>
         <meta name="description" content="My works" />
         <link rel="icon" href="/favicon.ico" />
+        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8520107381438109"
+     crossorigin="anonymous"></script>
       </Head>
       <div className='projectsContainer'>
         <h1 className='title'>My Projects</h1>
