@@ -112,5 +112,11 @@ export const myProjects = [
         info: "React, Typescript, Sass, MUI icons, AOS & React-scroll.",
         link: "https://coffeeshoptetouan.netlify.app/"
     },
-    
+    {
+        id: 6,
+        name: "Clockwork",
+        image: "6.png",
+        info: "Next JS, Sass, MUI icons, AOS & React-scroll.",
+        link: "https://clockworkinc.netlify.app/"
+    },
 ]
