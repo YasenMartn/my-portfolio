@@ -68,7 +68,12 @@ export const skills = [
         id: 14,
         image: "api.svg",
         name: "API Integration (Axios)"
-    }
+    },
+    {
+        id: 15,
+        image: "typescript.png",
+        name: "Typescript"
+    },
 ]
 
 export const myProjects = [
@@ -76,7 +81,7 @@ export const myProjects = [
         id: 1,
         name: "Treasure",
         image: "1.png",
-        info: "React, Redux, Sass, MUI icons, Swiper & React Router.",
+        info: "React, Redux, Sass, MUI icons, FakeStoreApi, Swiper & React Router.",
         link: "https://treasurestore.netlify.app/"
     },
     {
@@ -97,9 +102,15 @@ export const myProjects = [
         id: 4,
         name: "Indigo Agency",
         image: "4.png",
-        info: "React, Styled-components, MUI icons, AOS & React-scroll",
+        info: "React, Styled-components, MUI icons, AOS & React-scroll.",
         link: "https://indigoagency.netlify.app/"
     },
-    
+    {
+        id: 5,
+        name: "Coffee Shop",
+        image: "5.png",
+        info: "React, Typescript, Sass, MUI icons, AOS & React-scroll.",
+        link: "https://coffeeshoptetouan.netlify.app/"
+    },
     
 ]

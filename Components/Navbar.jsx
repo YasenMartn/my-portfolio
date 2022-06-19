@@ -20,8 +20,8 @@ const Navbar = () => {
   return (
     <div className='navbar'>
 
-      <Link href="/" >
-        <a href="" className="logoContainer">
+      <Link href="/"  >
+        <a href="" className="logoContainer" onClick={closeMenu}>
           <Image src="/pictures/k.png" alt="logo" width="50px" height="50px" objectFit='contain' />
         </a>
       </Link>
