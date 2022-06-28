@@ -1,16 +1,45 @@
 .aboutContainer{
     width: 100%;
-    height: calc(100vh - 70px);
-    background-color: $nicewhite;
-    @include flexCenter();
-    justify-content: flex-start;
-    padding-top: 200px;
-    flex-direction: column;
-    .info{
-        width: 370px;
-        margin-top: 20px;
-        p{
-            font-size: 1.2rem;
+    min-height: calc(100vh - 70px);
+    background-color: $main;
+    color: white;
+    overflow: hidden;
+    @include flexColumn();
+    .miniContainer{
+        @include flexCenter();
+        width: 100%;
+        height: 100%;
+        .left{
+            width: 50%;
+            min-height: calc(100vh - 70px);
+            position: relative;
+        }
+        .right{
+            width: 50%;
+            min-height: calc(100vh - 70px);
+            @include flexColumn();
+            justify-content: center;
+            padding: 20px 50px;
+            span{
+                font-size: 1.5rem ;
+                display: block ;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .aboutContainer{
+        .miniContainer{
+            @include flexColumn();
+            .left{
+                width: 100%;
+                min-height: calc((100vh - 70px) / 2);
+            }
+            .right{
+                width: 100%;
+                min-height: fit-content;
+            }
         }
     }
 }

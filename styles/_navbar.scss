@@ -1,87 +1,85 @@
-.navbar{
+.navbar {
     width: 100%;
     height: 70px;
-    background: $nicewhite;
+    background: $main;
     position: sticky !important;
     top: 0;
     @include flexCenter();
-    padding: 0 50px;
+    padding: 0 20px;
     justify-content: space-between;
     z-index: 2222 !important;
-    button{
+    button {
         @include btn();
     }
-    .logoContainer{
+    .logoContainer {
         width: 120px;
         height: 90%;
         @include flexCenter();
-        justify-content: flex-start;        
-        position: relative; 
+        justify-content: flex-start;
+        position: relative;
         cursor: pointer;
     }
-    ul{
-        list-style: none;
+    .linksContainer {
         @include flexCenter();
-        li{
-            margin-right: 20px;
+        a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
             font-weight: bold;
-            font-family: sans-serif;
-            a{
-                text-decoration: none;
-                color: $grey;
-                text-transform: uppercase;
-                font-size: 1.2rem;
-                &:hover{
-                    color: $orange;
-                }
-                &.active{
-                    color: $orange;
-                }
+            font-size: 1.2rem;
+            margin-right: 20px;
+            cursor: pointer;
+            &:hover {
+                color: $orange;
+            }
+            &:last-child{
+                margin-right: 0;
             }
         }
     }
 }
 
-.btn a{
+.btn a {
     color: inherit;
     font-size: inherit;
 }
 
-.mobileMenuButton{
+.mobileMenuButton {
     width: 40px;
     height: 40px;
     display: none;
     cursor: pointer;
-    .line{
+    .line {
         width: 100%;
         height: 5px;
-        background: black;
+        background: $blue;
         position: relative;
         transition: all .4s ease-in-out;
-        &.active{
+        &.active {
             background: transparent;
             transition: all .4s ease-in-out;
         }
-        &::after, &::before{
+        &::after,
+        &::before {
             content: "";
             width: 100%;
             height: 5px;
-            background: black;
+            background: $blue;
             position: absolute;
             transition: all .4s ease-in-out;
         }
-        &::after{
+        &::after {
             top: 15px;
         }
-        &::before{
+        &::before {
             bottom: 15px;
         }
-        &.active::after{
+        &.active::after {
             transition: all .4s ease-in-out;
             top: 0;
             transform: rotate(-45deg);
         }
-        &.active::before{
+        &.active::before {
             transition: all .4s ease-in-out;
             bottom: 0;
             transform: rotate(45deg);
@@ -89,7 +87,7 @@
     }
 }
 
-.mobileMenuContainer{
+.mobileMenuContainer {
     width: 90%;
     height: calc(100vh - 70px);
     position: fixed !important;
@@ -98,7 +96,8 @@
     overflow: hidden;
     visibility: hidden;
 }
-.mobileMenu{
+
+.mobileMenu {
     width: 100%;
     height: 100%;
     visibility: visible;
@@ -108,55 +107,59 @@
     z-index: 2222 !important;
     top: 0;
     right: 0;
-    flex-direction: column;    
+    flex-direction: column;
     transition: all .4s ease-in-out;
     transform: translate(101%);
-    &.active{
+    &.active {
         transition: all .4s ease-in-out;
         transform: translate(0%);
     }
-    li{
-        padding-bottom: 20px;
+    a {
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
         font-weight: bold;
-        list-style: none;
-        a{
-            font-size: 2rem;
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            &:hover{
-                color: black;
-            }
-            &.active{
-                color: black;
-            }
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        &:hover {
+            color: black;
         }
-    }  
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 }
 
 
-
-@media (max-width: 1000px){
-    .navbar{
+@media (max-width: 1000px) {
+    .navbar {
         padding: 0 20px;
     }
 }
 
-@media (max-width: 800px){
-    .navbar{
+@media (max-width: 800px) {
+    .navbar {
         padding: 0 20px;
-        ul{
+
+        .linksContainer {
             display: none;
         }
-        button{
+
+        ul {
             display: none;
         }
-    } 
-    .mobileMenuButton{
+
+        button {
+            display: none;
+        }
+    }
+
+    .mobileMenuButton {
         @include flexCenter();
     }
-    
-    .mobileMenu{
+
+    .mobileMenu {
         @include flexCenter();
 
     }

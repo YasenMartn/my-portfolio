@@ -1,10 +1,29 @@
 .contactContainer{
     width: 100%;
     min-height: calc(100vh - 70px);
-    @include flexCenter();
-    padding: 20px 0;
-    flex-direction: column;
-    background-color: $nicewhite;
+    @include flexColumn();
+    background-color: $main;
+    color: white;
+    h1{
+        margin-bottom: 20px;
+    }
+    .mContainer{
+        @include flexCenter();
+        width: 100%;
+        min-height: calc(100vh - 150px);
+        .right{
+            width: 50%;
+            min-height: calc(100vh - 150px);
+            position: relative;
+        }
+        .left{
+            width: 50%;
+            min-height: calc(100vh - 150px);
+            @include flexColumn();
+            justify-content: center;
+            padding: 20px 50px;
+        }
+    }
 }
 .btn{
     @include btn();
@@ -14,15 +33,18 @@
 form{
     padding: 30px;
     border-radius: 10px;
-    background-color: #000000;
+    // border: 1px solid $blue;
+    background-color: #05264C;
+    input{
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid grey;
+        outline: none;
+        width: 100% !important;
+    }
 }
-input{
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid grey;
-    outline: none;
-}
+
 .formInput{
     display: flex;
     flex-direction: column;
@@ -35,7 +57,7 @@ input{
     }
 }
 label{
-    font-size: 12px;
+    font-size: 1.1rem;
     color: white;
 }
 //if input is invalid and not focused then show error
@@ -48,8 +70,33 @@ input:invalid[focused="true"]{
 
 @media (max-width: 800px){
     form{
-        padding: 30px 40px;
+        padding: 30px 20px;
         border-radius: 10px;
-        background-color: #000000;
+        width: 80%;
+        .formInput{
+            width: 100%;
+            input{
+                width: 100% !important;
+            }
+        }
+       
+    }
+}
+
+@media (max-width: 800px){
+    .contactContainer{
+        overflow: hidden;
+        .mContainer{
+            @include flexColumn();
+            .right{
+                width: 100%;
+                min-height: calc((100vh - 70px) / 2);
+
+            }
+            .left{
+                width: 100%;
+                min-height: fit-content;
+            }
+        }
     }
 }

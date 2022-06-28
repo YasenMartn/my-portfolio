@@ -4,8 +4,8 @@
     @include flexColumn();
     align-items: center;
     justify-content: center;
-    background-color: $nicewhite;
-
+    background-color: $main;
+    color: white;
     .title{
         margin-bottom: 20px;
     }

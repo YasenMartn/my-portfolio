@@ -1,22 +1,22 @@
 .mainContainer{
     width: 100%;
     min-height: calc(100vh - 70px);
-    background: $nicewhite;
+    background: $main;
     overflow: hidden !important;
     @include flexCenter();
     .left{
-        width: 60%;
+        width: 40%;
         min-height: calc(100vh - 70px);
         overflow: hidden;
         @include flexCenter();
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 50px ;
+        padding: 20px;
         .header{
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-size: 3rem;
             font-weight: 700;
-            color: darken($grey, 20%);
+            color: white;
             .orangeHeader{
                 font-size: 3rem;
                 font-weight: 700;
@@ -35,36 +35,41 @@
             margin-right: 20px;
             font-size: 25px;
             cursor: pointer;
-            color: darken($grey, 20%);
+            color: white;
         }
         .socialsContainer{
             margin-bottom: 30px;
             @include flexCenter();
         }
-        .btn1{
-            @include btn();
-            margin-bottom: 30px ;
+        .btnsContainer{
+            @include flexCenter();
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 30px 0 !important;
+            .btn1{
+                @include btn();
+                text-decoration: none;
+                font-size: 1.1rem;
+                font-weight: normal;
+                @include flexCenter();
+
+            }
+            .btn2{
+                @include btn();
+                font-size: 1.1rem;
+                font-weight: normal;
+                @include flexCenter();
+            }
         }
-        .btn2{
-            @include btn();
-            display: none;
-            margin-bottom: 30px !important;
-        }
+        
     }
     .right{
-        width: 40%;
+        width: 60%;
         height: calc(100vh - 70px);
+        position: relative;
         @include flexCenter();
-        .BgContainer{
-            background:  url("/pictures/yk.png") no-repeat center / contain;
-            width: 90%;
-            height: 80%;
-            @include flexCenter();
-            .ImageContainer{
-                width: 100%;
-                height: 100%;
-            }
-                     
+        img{
+            transform: translateY(20px);
         }
     }
 }
@@ -91,51 +96,50 @@
         padding: 0 20px !important;
     }
 }
+
+
 @media (max-width: 800px){
     .mainContainer{
         flex-direction: column;
+        justify-content: flex-start;
         .left{
-            padding: 10px 20px !important;
-            width: 100% !important;
-            height: 100% !important;
+            padding: 10px 20px;
+            width: 100%;
+            min-height: fit-content;
             h1{
-                margin-bottom: 5px !important;
-                font-size: 2.5rem !important;
+                margin-bottom: 5px;
+                font-size: 2.5rem;
                 span{
-                    font-size: 2.5rem !important;
+                    font-size: 2.5rem;
                 }
             }
             span{
-                margin-bottom: 10px !important;
+                margin-bottom: 10px;
             }
             button{
-                width: 100% !important;
+                width: 100%;
             }
             .socialsContainer{
                 width: 100%;
             }
-            .btn1{
-                margin-bottom: 20px !important;
-            }
-            .btn2{
-                display: block !important;
+            .btnsContainer{
+                width: 100%;
+                .btn1{
+                    width: 100%;
+                }
+                .btn2{
+                    width: 100%;
+                }
             }
             .icon{
-                font-size: 35px !important;
+                font-size: 35px;
             }
         }
         .right{
-           display: none;
-            .imageContainer{
-                display: none;
-            }
-    
+            padding: 10px 20px;
+            width: 100%;
+            height: calc((100vh - 70px) / 2);
         }
-        .btn1{
-            font-size: 1rem !important;
-        }
-        .btn2{
-            font-size: 1rem;
-        }
+
     }
 }

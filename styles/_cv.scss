@@ -3,7 +3,7 @@
     min-height: calc(100vh - 70px);
     padding: 20px;
     @include flexColumn();
-    background-color: $nicewhite;
+    background-color: $main;
     .btnsContainer {
         @include flexCenter();
         margin-bottom: 20px;
